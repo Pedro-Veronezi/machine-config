@@ -7,10 +7,12 @@ Configurations for my Fedora desktop and other applications.
 * Google Chrome
 * jq
 * bat
-* rt...
+* rtorrent
 * git
-* git-flow
+* gitflow
 * unar
 * conda
-* ebook-converter
+* ebook-converter(calibre)
 * youtube-dl
+
+/# dnf install terminator jq bat rtorrent git gitflow unar conda calibre youtube-dl
