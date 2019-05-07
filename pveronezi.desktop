@@ -1,0 +1,4 @@
+# It's necessary that the config file are updated on the 
+# /home/USER/.config/terminator/config
+
+terminator -bf -l pveronezi -p pveronezi
