@@ -22,12 +22,14 @@ Configurations for my Fedora desktop and other applications.
 * gnome-tweaks - to edit the touchpad
 * nano
 * xclip
+* vim
+* ranger
 
 * vlc(non-free)
 
-/# dnf install terminator jq bat rtorrent git gitflow unar conda calibre youtube-dl gnome-tweaks nano xclip
+/# dnf install terminator jq bat rtorrent git gitflow unar conda calibre youtube-dl gnome-tweaks nano xclip vim ranger
 
-It's necessary that the config file are updated on the /home/USER/.config/terminator/config
+It's necessary that the config file be on the /home/USER/.config/terminator/config
 
 /#terminator -bf -l pveronezi -p pveronezi
 
