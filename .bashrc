@@ -9,7 +9,7 @@ fi
 PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 export PATH
 
-export EDITOR=nano
+export EDITOR=vim
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
@@ -23,10 +23,21 @@ export EDITOR=nano
 alias pycharm='bash /opt/pycharm/bin/pycharm.sh'
 alias d='cd ~/Downloads && clear'
 alias rm='rm -R'
+alias cura='.//opt/cura.AppImage'
 
 # functions
 vcurl(){
 	curl $1 | jq
+}
+
+# Remove all files in the regex expression arg
+rmall(){
+	if [ -z "$1" ]
+	then
+	       echo "Need one argument"	
+	else
+		find . -name "$1" -type f -delete
+	fi
 }
 
 vhist(){
@@ -35,4 +46,8 @@ vhist(){
 
 gitc(){
 	git commit -m ${1:-'Committed whithout description'}
+}
+
+gitp(){
+	git push origin ${1:-master}
 }
