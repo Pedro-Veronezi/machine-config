@@ -31,7 +31,7 @@ vcurl(){
 	curl $1 | jq
 }
 
-# Remove all files in the regex expression arg
+# Remove all files n subdir in the regex expression arg
 rmall(){
 	if [ -z "$1" ]
 	then
